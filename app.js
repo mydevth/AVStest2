@@ -9,7 +9,7 @@ router.get('/',(req,res)=>{
 })
 
 router.get('/avs',(req,res)=>{
-    const connectionString = "Driver={Tibero 6 ODBC Driver};Server=172.21.0.21;Database=NBU;Port=8629;UID=AVSREG;PWD=vnjoinnbu2564;Charset=utf8;";
+    const connectionString = "Driver=;";
     const sql = "SELECT * FROM VIEWOFFICER";
     async function connect() {
         try {
